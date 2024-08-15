@@ -1,0 +1,47 @@
+.body2 {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.button-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-group-container .responsive-button-group {
+  width: 100%;
+  max-width: 600px; /* Ensures the button group doesn't get too wide on larger screens */
+}
+
+.button-group-container hr {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.button-group-container a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.button-group-container .MuiButton-root {
+  color: #fff;
+  background-color: #1976d2;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-group-container .MuiButton-root:hover {
+  background-color: #1565c0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .button-group-container .responsive-button-group {
+    flex-direction: column; /* Stacks buttons vertically on small screens */
+  }
+}

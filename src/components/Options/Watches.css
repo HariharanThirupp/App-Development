@@ -1,0 +1,16 @@
+.head {
+  text-align: center;
+}
+
+.back {
+  background-color: beige;
+}
+
+.hover-text {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-text:hover {
+  color: #4CAF50; /* Change to your desired hover color */
+  transform: scale(1.1);
+}
